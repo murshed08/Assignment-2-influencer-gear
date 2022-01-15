@@ -6,10 +6,10 @@ body{
     background: #FFFFFF;
     
 }
-header, main{
+/* header, main{
     margin-left: 120px;
     margin-right: 120px;
-}
+} */
 /*---------------
 Common style End 
 -----------------*/
@@ -66,14 +66,13 @@ Top section style start
     font-style: normal;
     margin-bottom: 170px;
 }
-.half-width{
+.half-width, .photo{
+    width: 50%;
     margin-left: 65px;
-    width: 440px;
-    height: 414px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
-.half-width.camera:hover .photo{
-    transform: rotate(230deg) scale(1.2);
+.half-width:hover .photo {
+    transform: rotate(230deg) scale(1.02);
     transition: transform 1s ease-in-out;
 }
 
@@ -231,3 +230,31 @@ footer h3{
 /*---------------- 
 footer style End 
 ------------------*/
+
+/*------------------
+Media Queries Start 
+-------------------*/
+/* tablet Devices */
+
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .navbar, .nav-links{
+        display: block;
+    }
+    .influencer, .half-width{
+        display: block;
+    }
+    .logos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/*------------------
+Media Queries End
+-------------------*/
