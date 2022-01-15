@@ -1,4 +1,6 @@
-/* common style */
+/*------------
+ common style 
+ ------------*/
 body{
     font-family: 'Poppins', sans-serif;
     background: #FFFFFF;
@@ -8,8 +10,13 @@ header, main{
     margin-left: 120px;
     margin-right: 120px;
 }
+/*---------------
+Common style End 
+-----------------*/
 
-/* navbar style start */
+/*----------------- 
+navbar style start 
+-------------------*/
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -36,9 +43,13 @@ li, a{
     color: #3A3A3A;
     text-decoration: none;
 }
-/* navbar style End */
+/*---------------
+navbar style End 
+------------------*/
 
-/* Top section style start */
+/*----------------------
+Top section style start 
+------------------------*/
 .influencer{
     display: flex;
     margin-bottom: 180px;
@@ -61,34 +72,65 @@ li, a{
     height: 414px;
     margin-bottom: 100px;
 }
+.half-width.camera:hover .photo{
+    transform: rotate(230deg) scale(1.2);
+    transition: transform 1s ease-in-out;
+}
 
-/* Top section style End */
+/*--------------------- 
+Top section style End 
+-----------------------*/
 
-/* button style start */
+/*------------------
+ button style start 
+ -------------------*/
 .btn{
     border: none;
     color: white;
     background: #E02C6D;
     border-radius: 41px;
     padding: 10px 24px;
+    cursor: pointer;
 }
-/* button style end */
+.btn:hover{
+    transform: scale(1.1);
+    transition: transform .5s ease-in-out;
+}
+/*----------------
+button style end 
+------------------*/
 
-/* logo style start */
+/*----------------
+ logo style start -
+ -----------------*/
 .logos{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
 }
-/* logo style start */
+.logo:hover{
+    transform: scale(1.07);
+    transition: transform 1s ease-in-out;
+}
+.logo{
+    cursor: pointer;
+}
+/*--------------- 
+logo style End
+-----------------*/
 
-/* popular-collection style start */
+/*------------------------------
+ popular-collection style start 
+ -------------------------------*/
 .section-title{
     color: #3A3A3A;
     font-weight: 600;
     font-size: 28px;
     text-align: center;
+}
+.popular-collection{
+    margin-bottom: 50px;
 }
 .collections{
     display: grid;
@@ -102,10 +144,21 @@ li, a{
     border-radius: 5px;
     padding: 17px 15px 10px 14px ;
 }
+.collection:hover{
+    transform: scale(1.05);
+    transition: transform 1s ease;
+}
+.fa-star.filled{
+    color: #FB8200;
+}
+.fa-star.empty{
+    color: #FB8200;
+}
 
 .btn-see{
     position: absolute;
     left: 1200px;
+    right: 100px;
     color: #E02C6D;
     border: none;
     font-style: normal;
@@ -113,25 +166,68 @@ li, a{
     font-size: 16px;
     background: none;
 }
-/* popular-collection style end */
+/*----------------------------
+ popular-collection style end 
+ -----------------------------*/
 
-/* Featured style start */
+/*--------------------
+Form style start 
+----------------------*/
 
-.featured{
+.joining-form{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
 
 }
+form input{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid lightgray;
+    border-radius: 1px;
+    padding: 5px 90px 5px 10px;
+}
+/*--------------- 
+Form style End 
+----------------*/
 
-/* Featured style End */
-
-/* footer style start */
+/*-----------------
+footer style start 
+------------------*/
 footer{
     color: #FFFFFF;
-    margin-top: 100px;
+    margin-top: 50px;
     background: #0A0826;
     margin-left: 0;
     margin-right: 0;
     text-align: center;
+    padding-bottom: 10px;
 
 }
-/* footer style start */
+footer h3{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.copyright{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.social-media .fab{
+    display: inline-block;
+    justify-content: center;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+.social-media .fab:hover{
+    transform: scale(1.7);
+    transition: transform 1s ease-in-out;
+
+}
+/*---------------- 
+footer style End 
+------------------*/
