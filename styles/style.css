@@ -52,7 +52,7 @@ Top section style start
 ------------------------*/
 .influencer{
     display: flex;
-    margin-bottom: 180px;
+    margin-bottom: 40px;
 }
 .half-width h1{
     color: #3A3A3A;
@@ -67,8 +67,8 @@ Top section style start
     margin-bottom: 170px;
 }
 .half-width, .photo{
-    width: 50%;
-    margin-left: 65px;
+    width: 80%;
+    margin-left: 55px;
     margin-bottom: 50px;
 }
 .half-width:hover .photo {
@@ -129,7 +129,7 @@ logo style End
     text-align: center;
 }
 .popular-collection{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .collections{
     display: grid;
@@ -154,10 +154,11 @@ logo style End
     color: #FB8200;
 }
 
+.see-more{
+    display: flex;
+    justify-content: end;
+}
 .btn-see{
-    position: absolute;
-    left: 1200px;
-    right: 100px;
     color: #E02C6D;
     border: none;
     font-style: normal;
@@ -234,7 +235,7 @@ footer style End
 /*------------------
 Media Queries Start 
 -------------------*/
-/* tablet Devices */
+/* mobile Devices */
 
 @media only screen and (max-width: 688px) {
     .container{
@@ -242,9 +243,34 @@ Media Queries Start
     }
     .navbar, .nav-links{
         display: block;
+        align-items: center;
     }
     .influencer, .half-width{
         display: block;
+        align-items: center;
+
+    }
+    .logos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* Tablet devices */
+@media only screen and (min-width:688px) and (max-width:1024px) {
+    .container{
+        width: 100%;
+    }
+    .navbar, .nav-links{
+        display: flex;
+    }
+    .influencer{
+        display: flex;
+        flex-direction: row;
     }
     .logos{
         display: flex;
@@ -252,8 +278,12 @@ Media Queries Start
         justify-content: center;
     }
     .collections{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+    .btn-see{
+        display: flex;
+    }
+
 }
 /*------------------
 Media Queries End
