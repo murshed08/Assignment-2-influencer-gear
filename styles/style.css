@@ -1,6 +1,10 @@
 /* common style */
 body{
     font-family: 'Poppins', sans-serif;
+    background: #FFFFFF;
+    
+}
+header, main{
     margin-left: 120px;
     margin-right: 120px;
 }
@@ -69,3 +73,65 @@ li, a{
     padding: 10px 24px;
 }
 /* button style end */
+
+/* logo style start */
+.logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+/* logo style start */
+
+/* popular-collection style start */
+.section-title{
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 10px;
+}
+.collection{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 17px 15px 10px 14px ;
+}
+
+.btn-see{
+    position: absolute;
+    left: 1200px;
+    color: #E02C6D;
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    background: none;
+}
+/* popular-collection style end */
+
+/* Featured style start */
+
+.featured{
+    display: flex;
+
+}
+
+/* Featured style End */
+
+/* footer style start */
+footer{
+    color: #FFFFFF;
+    margin-top: 100px;
+    background: #0A0826;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+
+}
+/* footer style start */
